@@ -5,7 +5,7 @@ class Todo
     @description = description
   end
 
-  def print
-    puts @description
+  def to_s
+    @description
   end
 end

@@ -29,7 +29,7 @@ def delete
 end
 
 def list
-  TODO_LIST.print
+  puts TODO_LIST.to_s
 end
 
 def clear

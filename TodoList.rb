@@ -19,13 +19,19 @@ class TodoList
     @list = []
   end
 
-  def print
+  def size
+    @list.length
+  end
+
+  def to_s
     if @list.empty?
-      puts 'To-do list is empty. Add something!'
+      'To-do list is empty. Add something!'
     else
+      s = ''
       @list.each_with_index do |todo, index|
-        puts "#{index}    #{todo.description}"
+        s << "#{index}    #{todo.description}\n"
       end
     end
+    s
   end
 end
